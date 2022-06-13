@@ -15,6 +15,8 @@ If you want to get in touch about it, you may send me an email on ruolivei@micro
 
 ## Architecture diagram
 
+![image](https://user-images.githubusercontent.com/97529152/173387015-d39e7aeb-44a1-46cd-be14-38fd7e7427ba.png)
+
 
 ## Step by step
 
@@ -60,14 +62,14 @@ d. select all of them you want it, go to the next tab "Collect" and select "All 
 at this time, Microsoft has 2 types of agents for monitoring. AMA and MMA (sorry about the confusion : ) ... MMA is the legacy one and it will be deprecated in July 2024. 
 
 ### 4. to test what you did all above, go to Sentinel main page, click on "logs" in the left menu and run this query:
-
+```
   search "EC2"
   | summarize by $table
-
+```
 check on the results, in which table you are receiving logs from your new ARC server.
 after a couple of minutes, you should see the table SecurityEvent populated. Check with that query:
-
+```
   SecurityEvent
   | where Computer contains "EC2"
   | summarize count() by EventID
-
+```
