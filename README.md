@@ -73,3 +73,10 @@ after a couple of minutes, you should see the table SecurityEvent populated. Che
   | where Computer contains "EC2"
   | summarize count() by EventID
 ```
+## More about this solution
+
+- For Azure ARC:
+https://docs.microsoft.com/en-us/azure/azure-arc/overview
+
+- For Azure Monitoring Agent and how to install it
+https://docs.microsoft.com/en-us/azure/sentinel/data-connectors-reference#windows-security-events-via-ama
