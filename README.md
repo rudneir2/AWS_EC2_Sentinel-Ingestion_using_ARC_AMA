@@ -1,4 +1,4 @@
-# AWS_EC2_Sentinel-Ingestion_using_ARC_AMA
+# AWS EC2 Sentinel Ingestion using ARC and AMA
 Practical guide to ingest logs from AWS EC2 VMs into Sentinel by using ARC agent and Azure Monitoring Agent (AMA)
 
 ## Quick Intro
